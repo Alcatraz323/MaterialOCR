@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">MaterialOCR</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="main_empty">Empty</string>
+	<string name="main_drawer_1_t">Function</string>
+	<string name="main_drawer_2_t">Other</string>
+	<string name="main_menu_1">Settings</string>
+	<string name="main_menu_2">About</string>
+	<string name="fab_Menu_1">Camera</string>
+	<string name="fab_Menu_2">Gallery</string>
+	<string name="au_l_1">Version 1.4</string>
+	<string name="au_l_2">Developer</string>
+	<string name="au_l_2_1">elliotzheng and his team,Alcatraz</string>
+	<string name="au_l_3">View source</string>
+	<string name="au_l_4">View in market</string>
+	<string name="au_l_4_1">Thanks for being with me!</string>
+	<string name="result">Result:</string>
 </resources>

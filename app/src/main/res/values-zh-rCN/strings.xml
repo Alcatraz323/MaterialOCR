@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MaterialOCR</string>
+    <string name="main_empty">空</string>
+	<string name="main_drawer_1_t">功能</string>
+	<string name="main_drawer_2_t">其他</string>
+	<string name="main_menu_1">设置</string>
+	<string name="main_menu_2">关于</string>
+	<string name="fab_Menu_1">相机</string>
+	<string name="fab_Menu_2">相册</string>
+	<string name="au_l_1">版本 1.4</string>
+	<string name="au_l_2">开发者</string>
+	<string name="au_l_2_1">elliotzheng和他的团队,Alcatraz</string>
+	<string name="au_l_3">查看源码</string>
+	<string name="au_l_4">在市场中查看</string>
+	<string name="au_l_4_1">...</string>
+	<string name="result">结果:</string>
+</resources>

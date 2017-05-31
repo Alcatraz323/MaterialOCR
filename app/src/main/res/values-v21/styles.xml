@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="AppTheme" parent="@android:style/Theme.Material.Light">
+<resources
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="AppTheme.Parent">
+		<item name="actionModeStyle">@style/CustomActionMode</item>
+		<item name="colorPrimary">@color/default_colorPrimary</item>
+		<item name="colorAccent">@color/default_colorPrimary</item>
+	</style>
+	<style name="NightMode" parent="Theme.AppCompat.NoActionBar">
+		<item name="colorPrimary">@android:color/transparent</item>
+		<item name="colorAccent">@color/default_colorPrimary</item>
+	</style>
+	<style name="MiniFabLayout">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginTop">@dimen/fab_menu_item_margin_top</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MiniFab">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/mini_fab_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/mini_fab_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/mini_fab_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/mini_fab_margin_top</item>
+        <item name="fabSize">mini</item>
+        <item name="paddingEnd">0dp</item>
+        <item name="paddingStart">0dp</item>
+    </style>
+
+    <style name="TitleCardView">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPaddingBottom">4dp</item>
+        <item name="contentPaddingLeft">8dp</item>
+        <item name="contentPaddingRight">8dp</item>
+        <item name="contentPaddingTop">4dp</item>
+    </style>
+
+    <style name="TitleView">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+	<style name="ToolbarPopupTheme" parent="Theme.AppCompat">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+	<style name="AppTheme.Parent" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="windowActionModeOverlay">true</item>
+		<item name="windowActionBarOverlay">true</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+	</style>
+
+	<style name="CustomActionMode" parent="@style/Widget.AppCompat.ActionMode">
+		<item name="background">@color/default_colorPrimary</item>
+		<item name="height">64dp</item>
 	</style>
 </resources>

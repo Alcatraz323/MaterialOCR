@@ -1,11 +1,90 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:fitsSystemWindows="true"
+	android:focusable="false"
+	android:id="@+id/mainDrawerLayout1">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<FrameLayout
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
 
-</LinearLayout>
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+			<android.support.design.widget.CoordinatorLayout
+				android:id="@+id/coordinator_layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+			<android.support.design.widget.AppBarLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fitsSystemWindows="true"
+				android:id="@+id/mainAppBarLayout1">
+
+				<LinearLayout
+					app:layout_scrollFlags="scroll|enterAlways"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<View
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:id="@+id/mainView1"/>
+
+					<android.support.v7.widget.Toolbar
+						
+						android:background="#3f51b5"
+						android:layout_width="match_parent"
+						android:id="@+id/mainToolbar1"
+						android:theme="@style/ToolbarPopupTheme"
+						android:layout_height="?attr/actionBarSize">
+
+					</android.support.v7.widget.Toolbar>
+
+				</LinearLayout>
+
+			</android.support.design.widget.AppBarLayout>
+
+			
+
+				<android.support.v7.widget.RecyclerView
+					app:layout_behavior="@string/appbar_scrolling_view_behavior"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:id="@+id/mainRc1"/>
+
+				
+			</android.support.design.widget.CoordinatorLayout>
+		</LinearLayout>
+	
+		<io.github.yavski.fabspeeddial.FabSpeedDial
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|end"
+			app:fabGravity="bottom_end"
+			app:fabMenu="@menu/fabm"
+			app:miniFabBackgroundTint="@android:color/white"
+			app:miniFabDrawableTint="?attr/colorPrimaryDark"
+			app:miniFabTitleTextColor="?attr/colorPrimaryDark"
+			android:id="@+id/mainFabSpeedDial1"/>
+
+	</FrameLayout>
+
+	<android.support.design.widget.NavigationView
+		android:id="@+id/navigation"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		app:headerLayout="@layout/nav_header"
+		app:menu="@menu/activity_main_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>
+
