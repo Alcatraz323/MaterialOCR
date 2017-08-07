@@ -20,7 +20,7 @@
         android:resizeableActivity="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.alcatraz.mdocr.MainActivity"
+            android:name="com.alcatraz.mdocr.activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.alcatraz.mdocr.Author" />
+        <activity android:name="com.alcatraz.mdocr.activities.Author" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"

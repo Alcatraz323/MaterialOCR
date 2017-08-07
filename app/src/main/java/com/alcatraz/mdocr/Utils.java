@@ -9,10 +9,15 @@ public class Utils
 	SharedPreferences spf;
 	SharedPreferences.Editor edit;
 	Context ctx;
+	Constants cons;
 	public Utils(Context c){
 		ctx=c;
 		spf=c.getSharedPreferences(c.getPackageName()+"_preferences",c.MODE_PRIVATE);
 		edit=spf.edit();
+		cons=new Constants();
+	}
+	public Constants getConstInstance(){
+		return cons;
 	}
 	public void savePreference(PreferenceType t,String key,Object content){
 		if(t==PreferenceType.STRING){

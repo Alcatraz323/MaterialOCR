@@ -18,7 +18,7 @@
 <resources>
     <dimen name="fab_menu_item_margin_top">0dp</dimen>
     <dimen name="coordinator_layout_offset">@dimen/keyline_1</dimen>
-
+	<dimen name="card_margin">6dp</dimen>
     <dimen name="fab_margin">@dimen/keyline_1</dimen>
     <dimen name="mini_fab_margin_left">@dimen/keyline_1_minus_8dp</dimen>
     <dimen name="mini_fab_margin_top">@dimen/keyline_1_minus_8dp</dimen>

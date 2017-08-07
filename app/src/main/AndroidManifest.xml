@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
 		android:resizeableActivity = "true">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 		<activity
-			android:name=".Author"/>
+			android:name=".activities.Author"/>
 		<activity
 			android:name="com.yalantis.ucrop.UCropActivity"
 			android:screenOrientation="portrait"

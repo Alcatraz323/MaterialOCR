@@ -31,7 +31,7 @@
     <dimen name="mini_fab_margin_top">0dp</dimen>
     <dimen name="mini_fab_margin_right">@dimen/keyline_1_minus_8dp</dimen>
     <dimen name="mini_fab_margin_bottom">0dp</dimen>
-	
+	<dimen name="card_margin">0dp</dimen>
 	
 	
 	<dimen name="ucrop_padding_crop_frame">16dp</dimen>
