@@ -1,62 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_height="match_parent"
-	android:layout_width="match_parent"
-	android:padding="8dp">
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
 
-	<ImageView
-		android:layout_height="96dp"
-		android:layout_width="96dp"
-		android:id="@+id/mainrecabvlayerImageView1"/>
-
-	<LinearLayout
-		android:layout_height="96dp"
+	<RelativeLayout
+		android:layout_height="match_parent"
 		android:layout_width="match_parent"
-		android:orientation="vertical"
-		android:layout_toRightOf="@id/mainrecabvlayerImageView1"
 		android:padding="8dp">
 
-		<TextView
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_width="wrap_content"
-			android:textColor="#000000"
-			android:id="@+id/mainrecabvlayerTextView1"/>
-
-		<TextView
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceSmall"
-			android:layout_width="wrap_content"/>
+		<ImageView
+			android:layout_height="96dp"
+			android:layout_width="96dp"
+			android:id="@+id/mainrecabvlayerImageView1"/>
 
 		<LinearLayout
-			android:layout_height="match_parent"
+			android:layout_height="96dp"
 			android:layout_width="match_parent"
-			android:orientation="horizontal"
-			android:gravity="bottom">
+			android:orientation="vertical"
+			android:layout_toRightOf="@id/mainrecabvlayerImageView1"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/mainrecabvlayerTextView1"/>
 
 			<TextView
 				android:layout_height="wrap_content"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:textColor="#3D5AFE"/>
+				android:id="@+id/mainrecabvlayerTextView2"/>
 
 			<LinearLayout
-				android:layout_height="wrap_content"
+				android:layout_height="match_parent"
 				android:layout_width="match_parent"
 				android:orientation="horizontal"
-				android:gravity="right">
+				android:gravity="bottom">
 
 				<TextView
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
-					android:layout_width="wrap_content"/>
+					android:layout_width="wrap_content"
+					android:textColor="#3D5AFE"
+					android:id="@+id/mainrecabvlayerTextView3"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:gravity="right">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_width="wrap_content"
+						android:id="@+id/mainrecabvlayerTextView4"/>
+
+				</LinearLayout>
 
 			</LinearLayout>
 
 		</LinearLayout>
 
+	</RelativeLayout>
+
+	<LinearLayout
+		android:clickable="true"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/processingll"
+		android:background="#FFB74D"
+		android:gravity="center"
+		android:visibility="gone">
+
+		<ProgressBar
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:textColor="#E9E9E9"
+			android:layout_marginLeft="32dp"
+			android:text="Processing..."/>
+
 	</LinearLayout>
 
-</RelativeLayout>
+	<LinearLayout
+		android:clickable="true"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#D32F2F"
+		android:id="@+id/deletell"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="left|center">
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_delete"
+				android:scaleX="0.7"
+				android:scaleY="0.7"
+				android:layout_marginLeft="16dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Delete?"
+				android:textColor="#F2F2F2"
+				android:layout_margin="16dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="bottom|right">
+
+			<ImageButton
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_check"
+				android:scaleX="0.7"
+				android:scaleY="0.7"
+				android:id="@+id/mainrecabvlayerImageButton1"/>
+
+			<ImageButton
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_close"
+				android:scaleX="0.7"
+				android:scaleY="0.7"
+				android:id="@+id/mainrecabvlayerImageButton2"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>
 

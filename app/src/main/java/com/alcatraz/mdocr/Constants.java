@@ -1,13 +1,23 @@
 package com.alcatraz.mdocr;
 import java.util.*;
 import com.alcatraz.mdocr.beans.*;
+import android.content.*;
+import android.os.*;
 
 public class Constants
 {
 	private List<OSP> osps;
+	public static String FILE_IO_ITEM_SEPERATOR=";";
+	public static String FILE_IO_NUM_SEPERATOR=",";
+	public static final String root=Environment.getExternalStorageDirectory().getAbsolutePath()+"/Android/data"+"/com.alcatraz.mdocr/";
+	public final static int REQUEST_CAMERA=0;
+	public final static int REQUEST_GALLERY=1;
 	public Constants(){
 		osps=new LinkedList<OSP>();
 		_initOsp();
+	}
+	public static String getDataInternalDirectory(Context ctx){
+		return "/data/data/"+ctx.getPackageName()+"/files/";
 	}
 	private void _initOsp(){
 		//FabSpeedDia
